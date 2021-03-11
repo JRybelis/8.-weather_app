@@ -25,10 +25,3 @@ const getCity = async (city) => {
 
 };
 
-
-getCity('Singapore').then( data => {
-    return getWeather(data.Key);
-}).then(data => {
-    console.log(data);
-}).catch(error => console.log(error));
-
